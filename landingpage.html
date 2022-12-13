@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page using HTML and CSS</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+        *{padding:0;
+           margin:0;
+           box-sizing:border-box;
+        }
+        header{
+            width: 100%;
+            height: 100vh;
+            background:url('wallpaper.jpg');
+            background-size: cover;
+            background-position: center center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        nav{
+            width:100%;
+            height: 100px;
+        
+            color: wheat;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo{
+            font-size: 3em;
+            letter-spacing: 2px;
+            font-family:'Times New Roman', Times, serify;
+        }
+        .menu a{
+            text-decoration:none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 25px;
+        }
+        .register a{
+            text-decoration:none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            background: indianred;   
+            border-radius: 8px;
+        }
+        .txt{
+            max-width: 650px;
+            position:absolute;
+            top:40%;
+            bottom: 50%;
+            left: 3%;
+            color: white;
+            text-align: center;
+        }
+        .txt span{
+            letter-spacing: 5px;
+        }
+        .txt h1{
+            font-size: 3.3em;
+        }
+        .txt a{
+            text-decoration: none;
+            background: indianred;
+            color: white;
+            padding: 10px 20px;
+            letter-spacing: 5px;
+        }
+        footer{
+            background: black;
+            height: auto;
+            width: 100vw;
+            font-family: 'Courier New', Courier, monospace;
+            padding-top: 40px;
+            color: aliceblue;
+        }
+        .footer-content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .footer-content h3{
+            font-size: 1.8rem;
+            font-weight: 400;
+            text-transform: capitalize;
+            line-height: 3rem;
+        }
+        .footer-content p{
+            max-width: 500px;
+            margin: 10px auto;
+            line-height: 18px;
+            font-size: 18px;
+        }
+        .socials{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0 3rem 0;
+        }
+        .socials li{
+            margin: 0 10px;
+        }
+        .socials a{
+            text-decoration: none;
+            color: white;
+        }
+        .socials a i{
+            font-size: 1.1rem;
+            transition: color .4s ease;
+        }
+        .socials a:hover i{
+            color: aqua;
+        }
+        .footer-bottom{
+            background: black;
+            width: 100vw;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer-bottom p{
+            font-size: 14px;
+            word-spacing: 2px;
+            text-transform: uppercase;
+            opacity: .4;
+            font-weight: 20;
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="logo">
+            Opulent-Cars
+        </div>
+        <div class="menu">
+        <a href="#">Models</a>
+        <a href="#">Electrified</a>
+        <a href="#">Price & model tools</a>
+        <a href="#">SuperCars life & ownership</a>
+        <a href="#">Discover SuperCars</a>
+        </div>
+        <div class="register">
+            <a href="#">Sign In/Login</a>
+        </div>
+    </nav>
+    <section class="txt">
+        <span>Enjoy</span>
+        <h1>Riding your dream car</h1>
+        <br>
+        <a href="#">Book your dream Super Car</a>
+    </section>
+  </header>  
+  <footer>
+    <div class="footer-content">
+        <h3>Opulent-Cars</h3>
+        <p>Opulent-Cars is luxurious car dealing company</p>
+             <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+             </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy;2021 Opulent-Cars. All rights reserved</p>
+
+    </div>
+  </footer>
+</body>
+</html>
